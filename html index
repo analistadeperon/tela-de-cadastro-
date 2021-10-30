@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout 
+xmlns:android="http://schemas.android.com/apk/res/
+android"
+ xmlns:app="http://schemas.android.com/apk/
+res-auto"
+ xmlns:tools="http://schemas.android.com/tools"
+ android:id="@+id/container"
+ android:layout_width="match_parent"
+ android:layout_height="match_parent">
+Telas de cadastro 5
+ <EditText
+ android:id="@+id/edEmail"
+ android:layout_width="0dp"
+ android:layout_height="wrap_content"
+ android:layout_marginStart="24dp"
+ android:layout_marginTop="152dp"
+ android:layout_marginEnd="24dp"
+ android:inputType="textEmailAddress"
+ android:selectAllOnFocus="true"
+ app:layout_constraintEnd_toEndOf="parent"
+ app:layout_constraintHorizontal_bias="0.531"
+ app:layout_constraintStart_toStartOf="parent"
+ app:layout_constraintTop_toTopOf="parent" />
+ <EditText
+ android:id="@+id/edSenha"
+ android:layout_width="0dp"
+ android:layout_height="wrap_content"
+ android:layout_marginStart="24dp"
+ android:layout_marginEnd="24dp"
+ android:imeOptions="actionDone"
+ android:inputType="textPassword"
+ android:selectAllOnFocus="true"
+ app:layout_constraintEnd_toEndOf="parent"
+ app:layout_constraintHorizontal_bias="0.531"
+ app:layout_constraintStart_toStartOf="parent"
+ app:layout_constraintTop_toBottomOf="@+id/
+edEmail" />
+ <ProgressBar
+ android:id="@+id/loading"
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:layout_gravity="center"
+ android:layout_marginStart="32dp"
+ android:layout_marginTop="64dp"
+6 Telas de cadastro
+ android:layout_marginEnd="32dp"
+ android:layout_marginBottom="64dp"
+ android:visibility="gone"
+ app:layout_constraintBottom_toBottomOf="parent"
+ app:layout_constraintEnd_toEndOf="@+id/
+edSenha"
+ app:layout_constraintStart_toStartOf="@+id/
+edSenha"
+ app:layout_constraintTop_toTopOf="parent"
+ app:layout_constraintVertical_bias="0.3" />
+ <Button
+ android:id="@+id/btLogar"
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:layout_marginStart="8dp"
+ android:layout_marginTop="8dp"
+ android:layout_marginEnd="8dp"
+ android:text="Entrar"
+ app:layout_constraintEnd_toEndOf="parent"
+ app:layout_constraintHorizontal_bias="0.895"
+ app:layout_constraintStart_toStartOf="parent"
+ app:layout_constraintTop_toBottomOf="@+id/
+edSenha" />
+ <TextView
+ android:id="@+id/tvCadastrar"
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:layout_marginTop="40dp"
+ android:clickable="true"
+ android:singleLine="true"
+ android:text="Registrar-me"
+ android:textColor="#3F51B5"
+ app:layout_constraintStart_toStartOf="@+id/
+edSenha"
+ app:layout_constraintTop_toTopOf="@+id/
+loading" />
+Telas de cadastro 7
+ <TextView
+ android:id="@+id/tvSenha"
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:layout_marginTop="8dp"
+ android:clickable="true"
+ android:singleLine="true"
+ android:text="Recuperar a senha"
+ android:textColor="#3F51B5"
+ app:layout_constraintStart_toStartOf="@+id/
+edSenha"
+ app:layout_constraintTop_toBottomOf="@+id/
+tvCadastrar" />
+ <ImageView
+ android:id="@+id/imvAvatar"
+ android:layout_width="103dp"
+ android:layout_height="99dp"
+ android:layout_marginStart="8dp"
+ android:layout_marginTop="8dp"
+ android:layout_marginEnd="8dp"
+ app:layout_constraintEnd_toEndOf="parent"
+ app:layout_constraintStart_toStartOf="parent"
+ app:layout_constraintTop_toTopOf="parent"
+ tools:srcCompat="@drawable/loginavatar" />
+</android.support.constraint.ConstraintLayout>
